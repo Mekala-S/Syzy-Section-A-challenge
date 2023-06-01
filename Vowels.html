@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find vowels</title>
+    <script>
+      
+// Already given word
+var word = "Challenge";
+
+// Converting  to lowercase 
+var lowercaseWord = word.toLowerCase();
+
+//  vowels
+var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+// Initialize a counter 
+var vowelCount = 0;
+
+// Initialize an array to store the found vowels
+var foundVowels = [];
+
+// for conditions 
+for (var i = 0; i < lowercaseWord.length; i++) {
+  var char = lowercaseWord[i];
+
+  // Check characters
+  if (vowels.indexOf(char) !== -1) { 
+    // Increase the vowel count if it is a vowel
+    vowelCount++;
+
+    
+    foundVowels.push(char);
+  }
+}
+
+// Display the total vowel count
+document.write("Total vowels: " + vowelCount + "<br>");
+
+// Display the found vowels
+document.write("Vowels: " + foundVowels.join(", "));
+
+  </script>
+  </head>
+  <body>
+
+
+  </body>
+</html>

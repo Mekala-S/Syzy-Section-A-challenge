@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Longest Word Finder</title>
+  <script>
+  var text = "This is a coding challenge for the interview process"; // Given Sentence
+  
+  var words = text.split(" ");
+  var longestWord = ""; 
+  
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].length > longestWord.length) {
+      longestWord = words[i];
+    }
+  }
+  document.write("Longest word: " + longestWord);
+</script>
+</head>
+<body>
+
+</body>
+</html>

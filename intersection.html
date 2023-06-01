@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find intersection of two arrays</title>
+    <script>
+        var array1 = [1, 2, 3, 4, 5, 6];     // Given array
+        var array2 = [1, 3, 5, 7];         // Given array
+
+var intersection = array1.filter(function(value) {
+  return array2.indexOf(value) !== -1;
+});
+document.write(intersection); // getting output
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the largest sum of 3 integers</title>
+    
+    <script>
+        function findLargestSumOfThree(arr) {
+  
+  const uniqueArr = [...new Set(arr)]; // Removing duplicates from the array
+
+  uniqueArr.sort((a, b) => b - a);  // Sort the array in descending order
+
+  //  If the array length is less than 3, return 0 as there are not enough elements
+  if (uniqueArr.length < 3) {
+    return 0;
+  }
+
+  // Calculate the sum of the three largest unique integers
+  const largestSum = uniqueArr[0] + uniqueArr[1] + uniqueArr[2];
+
+  return largestSum;
+}
+const array = [1, 5, 8, 6, 7, 9, 9, 9];
+const largestSum = findLargestSumOfThree(array);
+
+document.write("Largest sum of three unique integers: " + largestSum);
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
